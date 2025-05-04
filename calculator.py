@@ -7,10 +7,16 @@ def subtract(x, y):
 def multiply(x,y):
     return x*y
 
+def division(x,y):
+    if y == 0:
+        return "Can not divide by zero!"
+    return x/y
+
 print("Select operation:")
 print("1. Add")
 print("2. Subtract")
 print("3. Multiply")
+print("4. Diision")
 
 choice = input("Enter choice (1/2/3/4): ")
 
@@ -23,5 +29,7 @@ elif choice == '2':
     print("Result:", subtract(num1, num2))
 elif choice == '3':
     print("Result:", multiply(num1, num2))
+elif choice == '4':
+    print("Result:", division(num1, num2))
 else:
     print("Invalid input")
