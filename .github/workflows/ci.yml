@@ -11,3 +11,14 @@ jobs:
     steps:
       - name: checkout current repo
         uses: actions/checkout@v4
+      
+      - name: install node js
+        uses: actions/setup-node@v4
+      
+      - name: install dependencies 
+        shell: bash
+        run: npm install
+      
+      - name: check the node modules
+        shell: bash
+        run: ls ./node_modules
