@@ -1,0 +1,13 @@
+name: Build node js app
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_app:
+    run-on: ubuntu-latest
+    steps:
+      - name: checkout current repo
+        uses: actions/checkout@v4
