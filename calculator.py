@@ -20,8 +20,8 @@ print("4. Diision")
 
 choice = input("Enter choice (1/2/3/4): ")
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+num1 = float(input("Enter first num: "))
+num2 = float(input("Enter second num: "))
 
 if choice == '1':
     print("Result:", add(num1, num2))
